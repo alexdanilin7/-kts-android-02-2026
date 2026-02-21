@@ -26,3 +26,7 @@ tasks.register("verifyHomework") {
         println("SUCCESS: All tests passed! Homework is complete.")
     }
 }
+
+kotlin {
+    jvmToolchain(21)
+}
