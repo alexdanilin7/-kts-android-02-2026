@@ -26,7 +26,7 @@ class Order(
      */
     fun removeProductById(productId: Int) {
         // TODO: remove product from _products by id
-        _products.removeFirstOrNull()
+        _products.firstOrNull{it.id == productId}?.let {_products.remove(it)}
     }
 
     /**

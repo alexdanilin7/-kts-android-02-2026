@@ -21,5 +21,7 @@ fun Order.applyDiscount(
         removeProductById(product.id)
         addProduct(discountedProduct)
         logger?.invoke("Discount applied to ${product.name}: ${product.price} -> $newPrice")
+
+
     }
 }

@@ -13,5 +13,6 @@ fun processOrder(order: Order): String {
         is OrderStatus.Created -> "Order ${order.id} is new"
         is OrderStatus.Paid -> "Order ${order.id} is paid"
         is OrderStatus.Cancelled -> "Order ${order.id} is cancelled: ${(order.status as OrderStatus.Cancelled).reason}"
+
     }
 }
